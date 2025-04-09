@@ -5,6 +5,7 @@ export default class GameOver extends Phaser.Scene {
     }
     preload() {
         this.load.image("btnSalir2","assets/gui/botones/play.png");
+        this.load.image('fondo', 'assets/fondos/bg.png');
     }
 
     create() {
