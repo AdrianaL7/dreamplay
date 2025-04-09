@@ -16,7 +16,7 @@ export default class GameOver extends Phaser.Scene {
 
 
         
-        this.add.image(0, 0, 'fondo').setScale(2);
+        this.add.image(0, 0, 'fondo').setScale(1.5);
         this.add.text(centerX-124.9,centerY-100, `Game Over`, {
             fontSize: '30px',
             fill: '#ffffff',
