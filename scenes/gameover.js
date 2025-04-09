@@ -5,7 +5,6 @@ export default class GameOver extends Phaser.Scene {
     }
     preload() {
         this.load.image("btnSalir2","assets/gui/botones/play.png");
-        this.load.image("fondogm","assets/fondos/bg3.PNG");
     }
 
     create() {
@@ -16,7 +15,7 @@ export default class GameOver extends Phaser.Scene {
 
 
         
-        this.add.image(0, 0, 'fondogm').setScale(2);
+        this.add.image(0, 0, 'fondo').setScale(2);
         this.add.text(centerX-124.9,centerY-100, `Game Over`, {
             fontSize: '30px',
             fill: '#ffffff',
