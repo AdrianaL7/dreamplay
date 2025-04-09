@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamPlay</title>
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="manifest" href="manifest.json">
+    
+
+</head>
+<body>
+    <div id="game-container"></div>
+    
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+
+
+
+
+
+  <style media='screen' type='text/css'>
+    @font-face {
+      font-family: PressStart2P;
+      src: url('assets/fonts/PressStart2P-Regular.ttf');
+      font-weight:400;
+      font-weight:normal;
+    }
+  </style>
+  <script src="prefabs/player.js"></script>
+  <script type="module" src="index.js"></script>
+
+
+
+
+
+
+
+  <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('service-worker.js').then(registration => {
+            console.log('Service Worker registrado con éxito:', registration);
+          }).catch(error => {
+            console.log('Error al registrar el Service Worker:', error);
+          });
+        });
+      }
+
+      </script>
+</body>
+</html>
